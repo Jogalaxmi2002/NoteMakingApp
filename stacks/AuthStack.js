@@ -23,8 +23,8 @@ export function AuthStack({ stack, app }) {
           cognito.UserPoolClientIdentityProvider.GOOGLE
         ],
         oAuth: {
-          callbackUrls: ["http://localhost:3000"],
-          logoutUrls: ["http://localhost:3000"],
+          callbackUrls: ["http://localhost:3000","https://joga-notes.netlify.app"],
+          logoutUrls: ["http://localhost:3000","https://joga-notes.netlify.app"],
         },
       },
     },

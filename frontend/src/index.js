@@ -17,8 +17,8 @@ Amplify.configure({
     oauth: {
       domain: `joganotes.auth.ap-south-1.amazoncognito.com`,
       scope: ["email", "profile", "openid", "aws.cognito.signin.user.admin"],
-      redirectSignIn: "http://localhost:3000",
-      redirectSignOut: "http://localhost:3000",
+      redirectSignIn: "https://joga-notes.netlify.app",
+      redirectSignOut: "https://joga-notes.netlify.app",
       responseType: "token",
     },
   },
