@@ -4,18 +4,18 @@ const config = {
   MAX_ATTACHMENT_SIZE: 5000000,
     // Backend config
     s3: {
-      REGION: process.env.REACT_APP_REGION,
-      BUCKET: process.env.REACT_APP_BUCKET,
+      REGION: "ap-south-1",
+      BUCKET: "joga-notes-storagestack-uploadsbucketc4b27cc7-5g7b19e65fwt",
     },
     apiGateway: {
-      REGION: process.env.REACT_APP_REGION,
-      URL: process.env.REACT_APP_API_URL,
+      REGION: "ap-south-1",
+      URL:" https://eqo42z4y5l.execute-api.ap-south-1.amazonaws.com",
     },
     cognito: {
-      REGION: process.env.REACT_APP_REGION,
-      USER_POOL_ID: process.env.REACT_APP_USER_POOL_ID,
-      APP_CLIENT_ID: process.env.REACT_APP_USER_POOL_CLIENT_ID,
-      IDENTITY_POOL_ID: process.env.REACT_APP_IDENTITY_POOL_ID,
+      REGION: "ap-south-1",
+      USER_POOL_ID:"ap-south-1_JVWRU0cXv",
+      APP_CLIENT_ID: "4oon7pl12vntr8ljdajl8135o",
+      IDENTITY_POOL_ID: "ap-south-1:eff852e9-bc0b-4979-a4dc-5adde371fcaf",
     },
   };
   

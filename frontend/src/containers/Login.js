@@ -6,6 +6,9 @@ import { useAppContext } from "../lib/contextLib";
 import { useFormFields } from "../lib/hooksLib";
 import { onError } from "../lib/errorLib";
 import "./Login.css";
+import FacebookButton from "../components/Signing/FacebookButton";
+import GoogleButton from "../components/Signing/GoogleButton";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   const { userHasAuthenticated } = useAppContext();
@@ -35,6 +38,8 @@ export default function Login() {
 
   return (
     <div className="Login">
+      <GoogleButton />
+      <FacebookButton />
       <Form onSubmit={handleSubmit}>
         <Form.Group size="lg" controlId="email">
           <Form.Label>Email</Form.Label>
@@ -63,6 +68,7 @@ export default function Login() {
           Login
         </LoaderButton>
       </Form>
+      <Link to="/login/reset">Forgot password?</Link>
     </div>
   );
 }
